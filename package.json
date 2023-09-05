@@ -10,6 +10,7 @@
   "scripts": {
     "msr": "multi-semantic-release"
   },
+  "type": "module",
   "author": "scottnath",
   "license": "MIT",
   "workspaces": [

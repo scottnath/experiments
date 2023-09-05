@@ -1,0 +1,22 @@
+{
+  "name": "scottnath-experiments-b",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./bundle.js",
+  "scripts": {
+    "build": "cp index.js bundle.js",
+    "test": "node ./index.js"
+  },
+  "type": "module",
+  "files": [
+    "*.js",
+    "random.txt"
+  ],
+  "dependencies": {
+    "scottnath-experiments-a": "*"
+  },
+  "repository": {
+    "url": "git+https://github.com/scottnath/experiments"
+  }
+}
