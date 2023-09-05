@@ -1,0 +1,21 @@
+{
+  "name": "scottnath-experiments",
+  "version": "0.0.0",
+  "description": "Experimenting with stuff",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottnath/experiments.git"
+  },
+  "scripts": {
+    "msr": "multi-semantic-release"
+  },
+  "author": "scottnath",
+  "license": "MIT",
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "devDependencies": {
+    "@qiwi/multi-semantic-release": "^7.0.0"
+  }
+}
