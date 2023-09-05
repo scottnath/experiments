@@ -14,7 +14,7 @@ export default {
     { name: 'main', channel: 'latest', prerelease: false },
   ],
   debug: true,
-  tagFormat: 'scottnath-experiments-a@${version}',
+  tagFormat: 'scottnath-experiments-b@${version}',
   plugins: [
     [
       'semantic-release-gitmoji',
