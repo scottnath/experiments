@@ -15,7 +15,9 @@
   "workspaces": [
     "workspaces/*"
   ],
-  "devDependencies": {
-    "@qiwi/multi-semantic-release": "^7.0.0"
+  "dependencies": {
+    "@qiwi/multi-semantic-release": "^7.0.0",
+    "semantic-release": "^21.1.1",
+    "semantic-release-gitmoji": "^1.6.4"
   }
 }
