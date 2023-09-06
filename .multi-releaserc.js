@@ -3,4 +3,7 @@ export default {
 		bump: 'inherit'
 	},
   debug: true,
+  "ignorePackages": [
+    "workspaces/meow/**"
+  ],
 }
