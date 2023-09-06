@@ -6,8 +6,7 @@
   "exports": "./bundle.js",
   "scripts": {
     "build": "cp index.js bundle.js",
-    "test": "node ./index.js",
-    "meow": "DEBUG=* GH_TOKEN=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 NPM_TOKEN=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 npx semantic-release --log-level=trace --dryRun --debug"
+    "test": "node ./index.js"
   },
   "type": "module",
   "files": [
