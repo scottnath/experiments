@@ -1,0 +1,13 @@
+{
+  "name": "scottnath-experiments-meow",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./meow": "./.releaserc.cjs"
+  },
+  "type": "module",
+  "repository": {
+    "url": "git+https://github.com/scottnath/experiments"
+  }
+}
