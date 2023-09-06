@@ -19,6 +19,7 @@ module.exports = {
   branches: [
     { name: 'main', channel: 'latest', prerelease: false },
     { name: 'add-release', channel: 'ar', prerelease: true },
+    { name: 'add-release-experiment', channel: 'are', prerelease: true}
   ],
   debug: true,
   plugins: [
