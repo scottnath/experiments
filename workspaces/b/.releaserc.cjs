@@ -1,31 +1,32 @@
-import { gitmojis } from 'gitmojis';
+// import { gitmojis } from 'gitmojis';
 
 /**
  * Generate release rules from gitmojis
  */
-const releaseRules = {
-  major: gitmojis.filter(({ semver }) => semver === 'major').map(({ code }) => code),
-  minor: gitmojis.filter(({ semver }) => semver === 'minor').map(({ code }) => code).concat(':new:'),
-  patch: gitmojis.filter(({ semver }) => (semver === 'patch' || semver === null)).map(({ code }) => code),
-};
+// const releaseRules = {
+//   major: gitmojis.filter(({ semver }) => semver === 'major').map(({ code }) => code),
+//   minor: gitmojis.filter(({ semver }) => semver === 'minor').map(({ code }) => code).concat(':new:'),
+//   patch: gitmojis.filter(({ semver }) => (semver === 'patch' || semver === null)).map(({ code }) => code),
+// };
 
-export default {
+module.exports = {
   branches: [
     { name: 'main', channel: 'latest', prerelease: false },
   ],
+  extends: 'scottnath-experiments-meow',
   debug: true,
   tagFormat: 'scottnath-experiments-b@${version}',
   plugins: [
-    [
-      'semantic-release-gitmoji',
-      {
-        tagFormat: 'scottnath-experiments-b@${version}',
-        releaseRules,
-        releaseNotes: {
-          semver: true,
-        }
-      }
-    ],
+    // [
+    //   'semantic-release-gitmoji',
+    //   {
+    //     tagFormat: 'scottnath-experiments-b@${version}',
+    //     releaseRules,
+    //     releaseNotes: {
+    //       semver: true,
+    //     }
+    //   }
+    // ],
     // ["@semantic-release/exec", {
     //   "generateNotesCmd": "echo ${JSON.stringify(nextRelease)}"
     // }],
