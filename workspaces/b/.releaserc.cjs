@@ -8,41 +8,8 @@
 //   minor: gitmojis.filter(({ semver }) => semver === 'minor').map(({ code }) => code).concat(':new:'),
 //   patch: gitmojis.filter(({ semver }) => (semver === 'patch' || semver === null)).map(({ code }) => code),
 // };
-
 module.exports = {
-  branches: [
-    { name: 'main', channel: 'latest', prerelease: false },
-  ],
-  extends: 'scottnath-experiments-meow',
+  extends: 'scottnath-experiments-meow/meow',
   debug: true,
   tagFormat: 'scottnath-experiments-b@${version}',
-  plugins: [
-    // [
-    //   'semantic-release-gitmoji',
-    //   {
-    //     tagFormat: 'scottnath-experiments-b@${version}',
-    //     releaseRules,
-    //     releaseNotes: {
-    //       semver: true,
-    //     }
-    //   }
-    // ],
-    // ["@semantic-release/exec", {
-    //   "generateNotesCmd": "echo ${JSON.stringify(nextRelease)}"
-    // }],
-    // [
-    //   "@semantic-release/github",
-    //   {
-    //     "successComment": false,
-    //     "failComment": false
-    //   }
-    // ],
-    // [
-    //   "@semantic-release/git",
-    //   {
-    //     "message": "chore(release): ${nextRelease.gitTag} [skip ci]\n\n${nextRelease.notes}"
-    //   }
-    // ],
-    // '@semantic-release/npm',
-  ]
 }
