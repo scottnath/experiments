@@ -19,6 +19,6 @@
   "dependencies": {
     "@qiwi/multi-semantic-release": "^7.0.0",
     "semantic-release": "^21.1.1",
-    "semantic-release-gitmoji": "^1.6.4"
+    "semantic-release-gitmoji": "github:scottnath/semantic-release-gitmoji#release-notes-class"
   }
 }
